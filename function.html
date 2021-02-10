@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+
+    <script>
+
+        // function
+        function display() {
+            alert('my first js function');
+        }
+        display();
+
+
+        // function with arguments
+        function multiply(x, y) {
+            document.write((x * y) + "<br/>");
+        }
+        multiply(10, 20);
+        multiply(5, 60);
+        multiply(100, 20);
+
+        // function using return
+        function add(x, y) {
+            return x + y;
+        }
+        var result = add(19, 18);
+        document.write("result is:", result + "<br/>");
+
+        // closure function inside a function
+        function fun1() {
+            var a = "hello";
+            function fun2() {
+                var b = "Bharat";
+                document.write(a + "" + b +"<br/>");
+            }
+            return fun2();
+        }
+        fun1();
+
+// local variable /////
+var z =30;
+function funky(){
+    var don = 20;
+    document.write("inside funky x:"+don+"<br/>");
+}
+funky()
+document.write("outside funky :"+z);
+    </script>
+</body>
+
+</html>

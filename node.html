@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <div id="div1">
+        <p id="p1">Lorem ipsum dolor sit amet consectetur.</p>
+        <p id="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <input type="button" value="Remove" onclick="handelRemove()">
+    <input type="button" value="Create" onclick="handelCreate()">
+
+
+    <script>
+
+
+        function handelRemove() {
+            var parent = document.getElementById("div1");
+            var child = document.getElementById("p2");
+            parent.removeChild(child);
+        };
+
+        function handelCreate() {
+            var parent = document.getElementById("div1");
+            var child = document.createElement("p");
+            var text = document.createTextNode("lorem jhdhfejnr uhfew f fjhrefw")
+            child.appendChild(text);
+            parent.appendChild(child);
+                    }
+
+
+
+    </script>
+</body>
+
+</html>

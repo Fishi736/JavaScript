@@ -1,0 +1,45 @@
+ html,body {height:100%;
+       
+    }
+    #cover{
+        background: url('dark.jpg') no-repeat center center ;
+        background-size: cover;
+        color:white;
+        height:100%;
+        text-align:center;
+        display:flex;
+        align-items: center;
+    }
+
+    img{
+        min-width: 100%;
+        max-width: 100%;
+    }
+    #cover-caption{
+        width:100%;
+    }
+.section-content{
+    padding: 5rem 0;
+}
+    #about{
+        background: url('/assetss/welcome-banner.jpg') center center no-repeat;
+        background-size: cover;
+        padding: 1.857rem;
+    }
+
+    .about-text{
+    color:white;
+    background:rgba(0,0,0,0.8);
+    padding: 1.875rem;
+
+    }
+    #footer-main{
+        background: #222;
+        color:white;
+        font-size:0.8rem;
+        padding:2.5rem 0;
+
+    }
+    .card{
+        padding:15px;
+    }

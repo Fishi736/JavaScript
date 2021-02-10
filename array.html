@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        body{
+            font-size: 2.5rem;
+        }
+    </style>
+</head>
+
+<body>
+   
+    <script>
+
+var a = new Array(2,4.54,6,"nisha");
+document.write("Printing an array : "+a+"<br/>");
+document.write("Length of array : "+a.length+"<br/>");
+document.write("Indexing at a[3] : "+a[3]+"<br/>");
+
+
+
+var b = [50,23,10,"south"];
+document.write(b+"<br/>");
+
+
+
+var c = new Array();
+c[0]=25;
+c[1]=36;
+c[2]=64;
+document.write(c+"<br/>");
+
+
+// --------concat reverse join-----------
+a=a.concat(b,43,23,2444443)
+document.write(a+"<br/>")
+document.write(a.reverse()+"<br/>");
+document.write(a.join("_") +"<br/>");
+
+
+
+// delete and replace
+var node = ["hello","ello","mello","bello",90,100];
+ 
+document.write(node+"<br/>");
+delete node[0];
+document.write(node+"<br/>");
+
+a[1] = 5.54545;
+document.write(a)
+
+    </script>
+</body>
+
+</html>

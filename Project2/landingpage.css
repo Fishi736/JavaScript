@@ -1,0 +1,86 @@
+html,body{
+    height:100%
+}
+
+body{
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    color:#5f6061;
+}
+
+h6{
+    text-transform:uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+img{
+    max-width:100%;
+  
+}
+
+.blockquote{
+    font-size:1.7rem;
+    color:#333;
+    border:none;
+    padding: 0;
+}
+
+.blockquote-footer{
+    margin:1rem 0 0;
+}
+
+#stage{
+background: url('apple-1122537_1920.jpg') center center no-repeat;
+background-size:cover;
+color:rgba(227, 233, 211, 0.801);
+height: 100%;
+width: 100%;
+display:flex;
+align-items:center;
+}
+
+#stage-caption{
+    font-size: 1.4rem;
+    font-weight: 500;
+    max-width:60rem;
+    margin:0 auto;
+    text-align:center;
+}
+
+
+#stage-caption h1{
+    color:rgb(239, 243, 235);
+    font-family:'Anton';
+    font-weight:bold;
+    text-transform:uppercase;
+
+}
+.feature-content{
+    padding-top: 8rem ;
+    padding-bottom: 8rem;
+    overflow:hidden;
+}
+
+/* media query */
+@media screen and  (min-width:991px){
+.feature-content{
+    display: flex;
+    align-items:center;
+}
+}
+
+
+.feature-dark{
+    background:#262f36 ;
+    color:white;
+}
+
+.feature-alt{
+    background: rgb(189, 181, 189);
+}
+
+#foot{
+    background:rgb(4, 4, 90);
+    color:wheat;
+    padding:3rem;
+}

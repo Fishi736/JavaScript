@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body{
+    font-size:90px ;
+}
+    </style>
+</head>
+<body>
+
+    <!-- onmouseover and onmouse event -->
+    <marquee behavior="" onmouseover="stop()" onmouseout="start()" direction="">Helow world</marquee>
+
+<p  onmouseover="handelMouseOverEvent(this)" onmouseout="handelMouseOutEvent(this)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatibus cum excepturi maxime perspiciatis dolorum debitis molestiae at, ratione id quisquam magni dolor consequatur illo iure, illum esse vero hic.</p>
+
+
+
+
+
+
+<script>
+    function handelMouseOverEvent(x){
+        x.style.color="red";
+        x.backgroundColor="yellow";
+        x.innerHTML = "mouseover";
+    }
+
+    function handelMouseOutEvent(y){
+        y.style.color="blue";
+        y.backgroundColor="white";
+        y.innerHTML = "mouseout";
+    }
+
+
+
+</script>
+</body>
+</html>

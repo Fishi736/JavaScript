@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #videoElement{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <video id="videoElement" autoplay="true" width="500px" height="500px" >
+     
+      </video>
+    
+    <script type="text/javaScript">
+        var video=document.querySelector("#videoElement");
+      
+        navigator.getUserMedia = navigator.getUserMedia || navigator.
+        webkitGetUserMedia||navigator.mozGetUserMedia||navigator.
+        msGetUserMedia || navigator.oGetUserMedia;
+    
+        if(navigator.mediaDevices.getUserMedia){
+              navigator.mediaDevices.getUserMedia({video:true}).then (function(stream){
+          video.srcObject = stream 
+          video.play();
+        }).catch(function (error){
+          console.log(error);
+        });
+        
+    
+        }
+      </script>
+</body>
+</html>
+

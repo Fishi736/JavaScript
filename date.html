@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        body {
+            font-size: 2.5rem;
+        }
+    </style>
+</head>
+
+<body onload=continuousDisplay()>
+    <h6>Current Day date time: </h6>
+    <p id="dateinfo">
+    </p>
+    <hr>
+    <h6>Current time : </h6>
+
+    <p id="cd">
+    </p>
+    <hr>
+    <h6>Current date : </h6>
+
+    <p id="day">
+    </p>
+    <hr>
+    <h6>Current date And time : </h6>
+
+    <p id="dayTime">
+    </p>
+    <hr>
+
+    <script>
+        
+        function continuousDisplay() {
+            setInterval(displayDate, 1000);
+        }
+
+        function displayDate() {
+            var d = new Date();
+            var x = d.toLocaleTimeString();
+            var y = d.toLocaleDateString();
+            var z = d.toLocaleString();
+
+            document.getElementById("dateinfo").innerHTML = d;
+            document.getElementById("cd").innerHTML = x;
+            document.getElementById("day").innerHTML = y;
+            document.getElementById("dayTime").innerHTML = z;
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

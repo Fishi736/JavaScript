@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<style>
+body{
+    background-image:linear-gradient(rgb(113, 167, 158),rgb(238, 209, 245));
+}
+
+#a{max-height: 250px;}
+</style>
+</head>
+
+<body>
+    <div class="col-lg-8 mx-auto">
+    <div class="card m-5 p-1 shadow ">
+        <img class="card-img-top img-fluid  " src="assets/images (2).jpg" id="a" alt="">
+        <div class="card-body">
+            <h4 class="card-title mb-3">User Name</h4>
+            <form>
+
+                <label for="">FirstName</label>
+                <input type="text" class="form-control" name="" id="f1">
+
+                <label for="">LastName</label>
+                <input type="text" class="form-control" name="" id="f2">
+
+                <label for="">NickName</label>
+                <input type="text" class="form-control" name="" id="f3">
+                <button class="btn btn-dark  btn-block mt-4" id="c" onclick="vali()">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+    <script>
+        let hour = 12;
+        let isWeekend = true;
+
+        if (hour < 10 || hour > 18 || isWeekend) {
+            alert('The office is closed.'); // it is the weekend
+        }
+        function vali() {
+
+
+            let firstName = document.getElementById('f1').value;
+            let lastName = document.getElementById('f2').value;
+            let nickName = document.getElementById('f3').value;
+            
+            if (firstName && lastName || nickName){
+                alert(`welcome ${firstName + lastName}`)
+            }
+            else{
+                alert('Anonymous')
+            }
+        }
+    </script>
+</body>
+
+</html>

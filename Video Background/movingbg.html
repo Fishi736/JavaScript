@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+
+        }
+
+        section {
+            position: absolute;
+            right: 0;
+            width: 100%;
+            min-height: 100vh;
+            padding: 100px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background: #111;
+            transition: 0.5s;
+
+        }
+
+        .banner.active {
+            right: 300px;
+
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 40px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1;
+        }
+
+        header .logo {
+            color: #fff;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .toggle {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            background: url('/assetss/bars-solid.svg') #fff;
+            background-repeat: no-repeat;
+            background-size: 25px;
+            background-position: center;
+            cursor: pointer;
+        }
+
+        .toggle.active {
+            background: url('/assetss/times-solid.svg') #fff;
+            background-repeat: no-repeat;
+            background-size: 25px;
+            background-position: center;
+            cursor: pointer;
+        }
+
+        section video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to left, #00f, #f00);
+            mix-blend-mode: overlay;
+        }
+
+        .text {
+            position: relative;
+            z-index: 10;
+
+        }
+
+        .text h2 {
+            font-size: 6em;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1em;
+            text-transform: uppercase;
+        }
+
+        .text h3 {
+            font-size: 4em;
+            font-weight: 600;
+            color: #fff;
+            line-height: 1em;
+            text-transform: uppercase;
+        }
+
+        .text p {
+            position: relative;
+            font-size: 1.1em;
+            margin: 20px 0;
+            font-weight: 400;
+            max-width: 700px;
+            color: rgb(201, 198, 198);
+            line-height: 1.5;
+        }
+
+        .text a {
+            display: inline-block;
+            font-size: 1.1em;
+            background: #fff;
+            padding: 20px 60px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 600;
+            color: black;
+            margin-top: 10px;
+            letter-spacing: 2px;
+        }
+
+        .sci {
+            position: absolute;
+            z-index: 10;
+            bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sci li {
+            list-style: none;
+        }
+
+        .sci li a {
+            display: inline-block;
+            margin-right: 20px;
+            transform: scale(0.5);
+        }
+
+        .sci li a img {
+            height: 90px;
+            filter: sepia(1);
+            padding: 10px;
+            background-color: white;
+        
+
+        }
+
+        .menu {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+
+        }
+
+        .menu ul {
+            position: relative;
+            list-style: none;
+
+        }
+
+        .menu ul li {
+            position: relative;
+            list-style: none;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            font-size: 24px;
+            color: black;
+        }
+
+
+        @media (max-width: 991px){
+            section,section header{
+                padding:40px;
+            }
+            .text h2{
+                font-size:3em;
+            }
+            .text h3{
+                font-size:2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="#" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#" onclick="toggleMenu()">About</a></li>
+            <li><a href="#" onclick="toggleMenu()">Locations</a></li>
+            <li><a href="#" onclick="toggleMenu()">Contact</a></li>
+
+        </ul>
+    </div>
+
+    <section class="banner">
+        <header>
+            <h2 class="logo">Your Logo</h2>
+            <div class="toggle" onclick="toggleMenu()">
+                
+            </div>
+        </header>
+
+        <video src="/assetss/video.mp4" muted loop autoplay></video>
+        <div class="overlay"> </div>
+        <div class="text">
+            <h2>Explore </h2>
+            <h3>The World</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Quae, nemo ut consequatur obcaecati, sunt
+                rem iusto tenetur atque eos doloribus harum quas
+                 soluta nostrum. Minima temporibus tenetur
+                nemo ut consequatur obcaecati, sunt
+                rem iusto tenetur atque eos doloribus
+                asperiores facere eum.</p>
+            <a href="#">Join Us</a>
+        </div>
+
+        <ul class="sci">
+            <li><a href="#"><img src="/assetss/facebook-f-brands.svg" alt=""></a></li>
+            <li><a href="#"><img src="/assetss/instagram-brands.svg" alt=""></a></li>
+            <li><a href="#"><img src="/assetss/whatsapp-brands.svg" alt=""></a></li>
+
+        </ul>
+    </section>
+
+
+    <script>
+        function toggleMenu() {
+            var menuToggle = document.querySelector('.toggle');
+            var banner = document.querySelector('.banner');
+            menuToggle.classList.toggle('active');
+            banner.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

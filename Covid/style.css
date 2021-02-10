@@ -1,0 +1,213 @@
+html,body{
+    background-color: #fff;
+    font-family:'Segoe UI', sans-serif;
+    overflow-x: hidden !important;
+    margin:0px;
+    padding: 0px;
+}
+*{
+    text-decoration: none;
+    }
+
+.nav{
+position:fixed;
+z-index:1000;
+top: 0;
+right: 0;
+left: 0;
+height: 80px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0 25px 0 25px;
+background-color: #fff;
+box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10);
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+.nav .link a{
+    margin-right: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color:black;
+}
+
+.nav .link .mainlink{
+    color: #e0501b;
+}
+
+.nav h4{
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 25px;
+
+}
+.landing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw 0 10vw;
+    height: 100vh;
+}
+
+.landingText h1{
+    font-size: 6vw;
+    margin: 0;
+
+}
+.landingText h1 span{
+    font-size: 3vw;
+    margin: 0;
+    color: salmon;
+
+}
+.landingText h3{
+    font-size: 20px;
+    opacity: 0.4;
+    line-height: 30px;
+    margin: 6px;
+    
+}
+.landingImage img{
+    width: 28vw;
+    
+}
+
+.landingText .btn{
+    width: 120px;
+    margin-top: 30px;
+    font-size: 1.2vw;
+    padding: 14px 20px 14px 20px ;
+    background-color: #2f8be0;
+    border-radius: 45px;
+    text-align: center;
+
+}
+
+.landingText .btn a{
+    font-size: 1.2vw;
+    color: #fff;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    
+}
+
+.aboutText{
+    padding: 0 50px;
+}
+
+.aboutText h1{
+position: relative;
+}
+
+.aboutText img{
+width:30vw;
+}
+
+.aboutlist{
+    width: 50%;
+}
+
+ol{
+    list-style: none;
+    color: #e0501b;
+    position: relative;
+    margin-bottom: 20px;
+    border-bottom:1px solid #fff;
+
+}
+li p{
+    font-size: 1.2vw;
+    color: #000;
+    padding-left: 60px;
+    line-height: 35px;
+    opacity: 0.6;
+    }
+
+li span{
+    font-weight: 600;
+position: absolute;
+line-height: 25px;
+font-size: 30px;
+    }
+
+    /* Info section */
+
+    .infoSection{
+        height:600px;
+    }
+
+    .infoHeader{
+        text-align:center;
+        margin-bottom:40px;
+    }
+
+    .infoCards{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items:center;
+        padding: 40px 0 40px 0;
+    }
+
+    .infoCards .card{
+        position: relative;
+        height: 360px;
+        width: 350px;
+        background: #fff;
+        box-shadow:0 10px 22px rgba(0, 0, 0, 0.09),0 10px 10px rgba(0, 0, 0, 0.09)
+    }
+
+    .infoCards .one {
+        width: 18px;
+        height: 40px;
+        position: absolute;
+        top: -50px;
+        right: -50px;
+
+    }
+    .cardoneImg{
+        width:30vw;
+    
+    }
+
+    .cardbgone{
+        height: 150px;
+        background-color: #ffce63;
+    }
+
+    .cardContent{
+        padding: 0 20px;
+    } 
+
+    .cardContent .cardBtn{
+        position:absolute;
+        right: 20px;
+        padding: 10px;
+        background-color:#ededed;
+        width: 25px;
+        height: 20px;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .cardContent .cardBtn .cardIcon{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 16px;
+        
+    }

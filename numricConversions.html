@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <script>
+        //CONVERSIONS
+
+        // (1) Sting conversion
+        let value = true;
+        alert(typeof value); // boolean
+
+        value = String(value); // now value is a string "true"
+        alert(typeof value); // string
+
+        let hindi = 1234;
+        alert(typeof hindi);
+        hindi = String(hindi)
+        alert(typeof hindi);
+
+        // (2) numerical conversions
+        alert("24" / "2");          //Strings automatically get converted into numbers
+        alert(Number("   123   ")); // 123
+        alert(Number("123z"));      // NaN (error reading a number at "z")
+        alert(Number(true));        // 1
+        alert(Number(false))
+
+        // (3) Boolean Conversions
+        alert(Boolean(1)); // true
+        alert(Boolean(0)); // false
+
+        alert(Boolean("hello")); // true
+        alert(Boolean("")); // false
+
+    </script>
+</body>
+
+</html>

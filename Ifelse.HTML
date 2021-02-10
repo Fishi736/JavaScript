@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    
+        <h1 class="display-4">Check if the number is odd or even
+            </h1>
+        
+    <br>
+    <input type="text" name="" id="ber">
+    <button class="btn btn-dark text-light" onclick="check()">Result</button>
+
+    <script type="text/javascript">
+        document.write("Hello world!");
+        // conditional operator 
+
+        var age = prompt('Enter your age', '');
+        let message = (age > 18) ? 'Welcome' : 'Access Denied'
+        alert(message)
+
+
+        // Check wheather the number is even of odd
+        function check(){
+        var num = document.getElementById('ber').value;
+
+        if (num % 2 == 0) {
+            document.write('Number is even');
+        }
+        else if (num % 2 != 0) {
+            document.write(' Number is odd');
+        }
+        else {
+            document.write('neither even nor odd');
+
+        }
+        }
+
+        //name of js
+
+        var name=prompt('What is the official name of Javascript','')
+        if(name=="ECMAscript"){
+            alert('excellent')
+        }
+        else{
+            alert('you are wrong')
+        }
+
+
+    </script>
+</body>
+
+</html>
